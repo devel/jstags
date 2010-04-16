@@ -1,4 +1,22 @@
 <!doctype html><html>
-    <head><title>Welcome</title></head>
-    <body><%== content %></body>
+    <head>
+      <title>Welcome</title>
+    </head>
+
+
+    <body>
+       <p>
+       <% if (my $user = $self->session->{user}) { %>
+           You are logged in as <%= $user %>.
+       <% } else { %>
+           <a href="/example/login">Login</a>
+       <% } %>
+       </p>
+       <%== content %>
+    </body>
+
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+
 </html>

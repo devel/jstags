@@ -1,0 +1,9 @@
+% layout 'default';
+
+<form action="/example/login" method="get">
+
+<input type="text" name="user" value="<%= $self->session->{user} %>">
+<input type="submit" value="Change user">
+</form>
+
+<p><a href="/">Homepage</a></p>
