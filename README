@@ -6,12 +6,15 @@
 
 3) "Login" via http://localhost:3000/example/login and go to the homepage
 
-4) Modify the HTML in templates/example/welcome.html.ep and add
-javascript to public/js/site.js to allow adding and deleting tags with
-the /example/edit_tags JSON API.
-
+4) Modify the HTML in templates/example/welcome.html.ep and edit
+public/js/site.js to allow adding and deleting tags with the
+/example/edit_tags JSON API. Tags on input should be comma separated.
+Deleting a tag should be by pressing a link like [x] next to the tag.
 
 All APIs:
+
+  - Can be used with either GET or POST
+
   - on error:
      { error => 'Some error' }
 
