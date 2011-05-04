@@ -10,5 +10,6 @@ use_ok('JSTags');
 
 # Test
 my $t = Test::Mojo->new(app => 'JSTags');
-$t->get_ok('/')->status_is(200)->content_type_is('text/html')
-  ->content_like(qr/Mojolicious Web Framework/i);
+$t->get_ok('/')->status_is(200)->content_type_is('text/html;charset=UTF-8')
+  ->content_like(qr/Welcome to the tags server/i);
+
