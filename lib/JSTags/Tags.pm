@@ -1,9 +1,8 @@
 package JSTags::Tags;
 use Storable qw(retrieve nstore);
+use Mojo::Base -base;
 
-use base 'Mojo::Base';
-
-__PACKAGE__->attr( file );
+__PACKAGE__->attr( 'file' );
 __PACKAGE__->attr( tags => 0);
 
 sub user {

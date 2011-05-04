@@ -1,6 +1,5 @@
 package JSTags::Controller;
-use strict;
-use base 'Mojolicious::Controller';
+use Mojo::Base 'Mojolicious::Controller';
 
 sub user {
     my $self = shift;

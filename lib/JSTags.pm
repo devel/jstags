@@ -1,9 +1,5 @@
 package JSTags;
-
-use strict;
-use warnings;
-
-use base 'Mojolicious';
+use Mojo::Base 'Mojolicious';
 use JSTags::Tags;
 
 __PACKAGE__->attr( 'tags' );

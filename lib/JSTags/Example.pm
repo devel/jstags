@@ -1,9 +1,5 @@
 package JSTags::Example;
-
-use strict;
-use warnings;
-
-use base 'JSTags::Controller';
+use Mojo::Base 'JSTags::Controller';
 
 # This action will render a template
 sub welcome {
